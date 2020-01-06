@@ -1,0 +1,22 @@
+[base]
+pidfile = "/tmp/job.pid"
+
+RPCAddrs = "tcp@127.0.0.1:6923"
+pushChan = 2
+pushChanSize = 50
+
+[redis]
+RedisAddr = "192.168.232.128:6379"
+redisPw = ""
+
+[cometsAddrs]
+key = 1
+addr = "tcp@127.0.0.1:6912"
+
+
+[zookeeper]
+host = "192.168.232.128:2181"
+basePath = "/im_logic_rpc_server"
+serverPathLogic = "LogicRpc"
+serverPathComet = "CometRpc"
+ServerId = "1"
